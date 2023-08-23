@@ -11,11 +11,6 @@
   font-size: 6vw;
   margin-bottom: 10px;
 }
-/* #greeting span {
-  display: inline-block;
-  opacity: 0;
-  animation: FadeInGreeting 0.5s ease-in-out forwards;
-} */
 
 #login-form input {
   font-size: 4vw;
@@ -35,4 +30,94 @@
 #login-form input::placeholder {
   color: white;
   font-weight: bold;
+}
+
+#todo-form input {
+  margin-top: 5%;
+  width: 20.4rem;
+  height: 4rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1.4rem;
+  box-shadow: 20px;
+  background: none;
+  font-family: inherit;
+  outline: none;
+  caret-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+#todo-list {
+  width: 1000px;
+  margin-top: 1.5%;
+  height: 240px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#todo-list li {
+  text-align: left;
+  float: left;
+  margin: 1%;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  list-style: none;
+}
+
+#todo-list li span {
+  font-size: 20px;
+  padding-left: 1.4rem;
+  font-weight: bold;
+}
+
+#close {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  font: inherit;
+  text-indent: 100%;
+  cursor: pointer;
+  float: right;
+
+  &:focus {
+    outline: solid 0 transparent;
+    box-shadow: 0 0 0 2px white;
+  }
+
+  &:hover {
+    background: lightgray;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 0.0625em);
+    width: 0.125em;
+    height: 70%;
+    border-radius: 0.125em;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: "";
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
 }
