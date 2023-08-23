@@ -1,3 +1,38 @@
-.hidden{
-    display: none;
+@import "quote.css";
+@import "clock.css";
+@import "date.css";
+@import "main.css";
+@import "weather.css";
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.hidden {
+  display: none;
+}
+
+header,
+#main,
+footer {
+  position: center;
+  width: 100%;
+  color: white;
+  animation: appear 0.5s ease-in forwards;
+  animation-delay: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  max-width: 100%;
+  object-fit: fill;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+

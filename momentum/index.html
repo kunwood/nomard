@@ -7,36 +7,51 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type = "submit" value="Log In" />
-    </form>
-    <h3 id="date">0000.00.00</h3>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list">
-    </ul>
+    <header>
+      <!-- 날씨 부분 -->
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div id="main">
+      <!-- 날짜 부분 -->
+      <h3 id="date">0000.00.00</h3>
+      <!-- 시간 부분 -->
+      <h2 id="clock">00:00</h2>
+      <!-- 로그인 부분 -->
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <!-- <input type="submit" value="Log In" /> -->
+      </form>
+      <div id="greeting" class="hidden"></div>
+      <!-- Todo 입력 부분 -->
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <!-- Todo list 부분 -->
+      <ul id="todo-list"></ul>
+    </div>
+    <!-- 명언 부분 -->
     <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
+      <span></span><br />
       <span></span>
     </div>
-    <script src="js/greetings.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+
   </body>
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
 </html>
