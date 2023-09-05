@@ -38,7 +38,7 @@
   height: 4rem;
   border: 2px solid white;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   padding-left: 1.4rem;
   box-shadow: 20px;
   background: none;
@@ -70,7 +70,7 @@
   margin: 1%;
   position: relative;
   height: 40px;
-  width: 200px;
+  width: 250px;
   list-style: none;
 }
 
